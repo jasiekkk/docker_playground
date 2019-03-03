@@ -1,0 +1,24 @@
+global:
+  scrape_interval: 5s
+  external_labels:
+    monitor: 'Prometheus Monitor'
+
+scrape_configs:
+  - job_name: 'Data App Monitoring'
+    static_configs:
+      - targets: ['data_app_web_link:3004']
+  - job_name: 'Proxy App Monitoring'
+    static_configs:
+      - targets: ['proxy_app_web_link:3003']
+  - job_name: 'Main Via Proxy ONE App Monitoring'
+    static_configs:
+      - targets: ['main_via_proxy_app_web_link:3002']
+  - job_name: 'Main Via Proxy TWO App Monitoring'
+    static_configs:
+      - targets: ['main_via_proxy_app_two_web_link:3006']
+  - job_name: 'Main Direct App Monitoring'
+    static_configs:
+      - targets: ['main_direct_app_web_link:3001']
+  - job_name: 'Docker Engine - Mac'
+    static_configs:
+      - targets: ['172.17.0.1:9999']

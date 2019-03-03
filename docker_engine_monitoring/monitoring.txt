@@ -1,0 +1,5 @@
+docker network create docker_engine_monitoring_bridge
+
+docker run -d -p 9090:9090 --name=prometheus_name --network docker_engine_monitoring_bridge -v ~/Desktop/ROR/DOCKER/monitoring/prometheus.yml:/etc/prometheus/prometheus.yml  prom/prometheus
+
+docker run -d -p 3005:3000 --name=grafana_name --network docker_engine_monitoring_bridge -e "GF_SECURITY_ADMIN_PASSWORD=secret" --link prometheus_name:prometheus_link grafana/grafana

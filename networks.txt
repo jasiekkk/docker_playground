@@ -1,0 +1,3 @@
+docker network create main_via_proxy_proxy_bridge
+docker network create proxy_data_bridge
+docker network create main_direct_data_bridge

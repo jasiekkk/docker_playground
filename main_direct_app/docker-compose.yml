@@ -1,0 +1,20 @@
+version: '3'
+services:
+  web:
+    build: .
+    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3001 -b '0.0.0.0'"
+    volumes:
+      - .:/main_direct_app
+    container_name: main_direct_app_web_name
+    ports:
+      - "3001:3001"
+    networks:
+      - main_direct_data_bridge
+      - apps_monitoring_bridge
+    external_links:
+      - data_app_web_name:data_app_web_link
+networks:
+  main_direct_data_bridge:
+    external: true
+  apps_monitoring_bridge:
+    external: true

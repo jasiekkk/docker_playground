@@ -1,0 +1,31 @@
+version: '3'
+services:
+  db:
+    image: postgres
+    volumes:
+      - ./tmp/db:/var/lib/postgresql/data
+    networks:
+      - proxy_data_bridge
+      - main_direct_data_bridge
+      - apps_monitoring_bridge
+  web:
+    build: .
+    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3004 -b '0.0.0.0'"
+    volumes:
+      - .:/data_app
+    container_name: data_app_web_name
+    ports:
+      - "3004:3004"
+    depends_on:
+      - db
+    networks:
+      - proxy_data_bridge
+      - main_direct_data_bridge
+      - apps_monitoring_bridge
+networks:
+  proxy_data_bridge:
+    external: true
+  main_direct_data_bridge:
+    external: true
+  apps_monitoring_bridge:
+    external: true

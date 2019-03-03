@@ -1,0 +1,19 @@
+docker network create apps_monitoring_bridge
+
+docker run -d -p 9090:9090 \
+--name=prometheus_name \
+--network apps_monitoring_bridge \
+-v ~/Desktop/ROR/DOCKER/apps_monitoring/prometheus.yml:/etc/prometheus/prometheus.yml \
+--link data_app_web_name:data_app_web_link \
+--link proxy_app_web_name:proxy_app_web_link \
+--link main_via_proxy_app_web_name:main_via_proxy_app_web_link \
+--link main_via_proxy_app_two_web_name:main_via_proxy_app_two_web_link \
+--link main_direct_app_web_name:main_direct_app_web_link \
+prom/prometheus
+
+docker run -d -p 3005:3000 \
+--name=grafana_name \
+--network apps_monitoring_bridge \
+-e "GF_SECURITY_ADMIN_PASSWORD=secret" \
+--link prometheus_name:prometheus_link \
+grafana/grafana

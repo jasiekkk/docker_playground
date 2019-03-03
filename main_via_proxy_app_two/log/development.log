@@ -1,0 +1,497 @@
+Started GET "/swagger" for 127.0.0.1 at 2019-02-23 20:26:47 +0100
+Processing by GrapeSwaggerRails::ApplicationController#index as HTML
+  Rendering /Users/jasiekkk/.rvm/gems/ruby-2.4.4/gems/grape-swagger-rails-0.3.0/app/views/grape_swagger_rails/application/index.html.erb
+  Rendered /Users/jasiekkk/.rvm/gems/ruby-2.4.4/gems/grape-swagger-rails-0.3.0/app/views/grape_swagger_rails/application/index.html.erb (590.0ms)
+Completed 200 OK in 615ms (Views: 603.0ms)
+
+
+Started GET "/swagger_doc" for 127.0.0.1 at 2019-02-23 20:26:47 +0100
+Started GET "/api/users_from_data_app" for 127.0.0.1 at 2019-02-23 20:26:51 +0100
+Started GET "/swagger" for ::1 at 2019-02-23 20:33:54 +0100
+Processing by GrapeSwaggerRails::ApplicationController#index as HTML
+  Rendering /Users/jasiekkk/.rvm/gems/ruby-2.4.4/gems/grape-swagger-rails-0.3.0/app/views/grape_swagger_rails/application/index.html.erb
+  Rendered /Users/jasiekkk/.rvm/gems/ruby-2.4.4/gems/grape-swagger-rails-0.3.0/app/views/grape_swagger_rails/application/index.html.erb (236.8ms)
+Completed 200 OK in 258ms (Views: 247.9ms)
+
+
+Started GET "/swagger_doc" for ::1 at 2019-02-23 20:33:55 +0100
+Started GET "/api/users_from_data_app" for ::1 at 2019-02-23 20:33:57 +0100
+Started GET "/swagger" for ::1 at 2019-02-23 20:38:00 +0100
+Processing by GrapeSwaggerRails::ApplicationController#index as HTML
+  Rendering /Users/jasiekkk/.rvm/gems/ruby-2.4.4/gems/grape-swagger-rails-0.3.0/app/views/grape_swagger_rails/application/index.html.erb
+  Rendered /Users/jasiekkk/.rvm/gems/ruby-2.4.4/gems/grape-swagger-rails-0.3.0/app/views/grape_swagger_rails/application/index.html.erb (23.7ms)
+Completed 200 OK in 36ms (Views: 32.7ms)
+
+
+Started GET "/swagger_doc" for ::1 at 2019-02-23 20:38:00 +0100
+Started GET "/api/users_via_proxy_from_data_app" for ::1 at 2019-02-23 20:38:07 +0100
+Started GET "/swagger" for ::1 at 2019-02-23 20:40:59 +0100
+Processing by GrapeSwaggerRails::ApplicationController#index as HTML
+  Rendering /Users/jasiekkk/.rvm/gems/ruby-2.4.4/gems/grape-swagger-rails-0.3.0/app/views/grape_swagger_rails/application/index.html.erb
+  Rendered /Users/jasiekkk/.rvm/gems/ruby-2.4.4/gems/grape-swagger-rails-0.3.0/app/views/grape_swagger_rails/application/index.html.erb (41.9ms)
+Completed 200 OK in 56ms (Views: 50.9ms)
+
+
+Started GET "/swagger_doc" for ::1 at 2019-02-23 20:40:59 +0100
+Started GET "/api/users_via_proxy_from_data_app" for ::1 at 2019-02-23 20:41:02 +0100
+Started GET "/swagger" for 172.31.0.1 at 2019-02-24 12:32:26 +0000
+Processing by GrapeSwaggerRails::ApplicationController#index as HTML
+  Rendering /usr/local/bundle/gems/grape-swagger-rails-0.3.0/app/views/grape_swagger_rails/application/index.html.erb
+  Rendered /usr/local/bundle/gems/grape-swagger-rails-0.3.0/app/views/grape_swagger_rails/application/index.html.erb (1981.7ms)
+Completed 200 OK in 2020ms (Views: 1998.9ms)
+
+
+Started GET "/swagger_doc" for 172.31.0.1 at 2019-02-24 12:32:28 +0000
+Started GET "/api/users_via_proxy_from_data_app" for 172.31.0.1 at 2019-02-24 12:32:53 +0000
+Started GET "/api/try_users_via_direct_app" for 172.31.0.1 at 2019-02-24 12:33:08 +0000
+  
+Terrapin::ExitStatusError (Command 'curl 'localhost:3001/api/users_directly_from_data_app'' returned 7. Expected 0
+Here is the command output: STDOUT:
+
+
+
+STDERR:
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to localhost port 3001: Connection refused
+):
+  
+app/api/via_proxy/api.rb:37:in `block (2 levels) in <class:API>'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.3ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (23.5ms)
+Started GET "/api/try_users_directly_from_data_app_via_link" for 172.31.0.1 at 2019-02-24 12:33:14 +0000
+  
+Terrapin::ExitStatusError (Command 'curl 'data_app_web_link:3004/api/users'' returned 6. Expected 0
+Here is the command output: STDOUT:
+
+
+
+STDERR:
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: data_app_web_link
+):
+  
+app/api/via_proxy/api.rb:19:in `block (2 levels) in <class:API>'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.3ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.7ms)
+Started GET "/api/try_users_directly_from_data_app_via_address" for 172.31.0.1 at 2019-02-24 12:33:30 +0000
+  
+Terrapin::ExitStatusError (Command 'curl 'localhost:3004/api/users'' returned 7. Expected 0
+Here is the command output: STDOUT:
+
+
+
+STDERR:
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to localhost port 3004: Connection refused
+):
+  
+app/api/via_proxy/api.rb:28:in `block (2 levels) in <class:API>'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.3ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.7ms)
+Started GET "/swagger" for 172.31.0.1 at 2019-02-24 12:48:27 +0000
+Processing by GrapeSwaggerRails::ApplicationController#index as HTML
+  Rendering /usr/local/bundle/gems/grape-swagger-rails-0.3.0/app/views/grape_swagger_rails/application/index.html.erb
+  Rendered /usr/local/bundle/gems/grape-swagger-rails-0.3.0/app/views/grape_swagger_rails/application/index.html.erb (1680.6ms)
+Completed 200 OK in 1719ms (Views: 1695.8ms)
+
+
+Started GET "/swagger_doc" for 172.31.0.1 at 2019-02-24 12:48:29 +0000
+Started GET "/api/users_via_proxy_from_data_app" for 172.31.0.1 at 2019-02-24 12:48:37 +0000
+Started GET "/api/try_users_via_direct_app" for 172.31.0.1 at 2019-02-24 12:48:41 +0000
+Started GET "/api/try_users_directly_from_data_app_via_link" for 172.31.0.1 at 2019-02-24 12:48:51 +0000
+Started GET "/api/try_users_directly_from_data_app_via_address" for 172.31.0.1 at 2019-02-24 12:48:55 +0000
+Started GET "/swagger" for 172.31.0.1 at 2019-02-24 17:54:29 +0000
+Processing by GrapeSwaggerRails::ApplicationController#index as HTML
+  Rendering /usr/local/bundle/gems/grape-swagger-rails-0.3.0/app/views/grape_swagger_rails/application/index.html.erb
+  Rendered /usr/local/bundle/gems/grape-swagger-rails-0.3.0/app/views/grape_swagger_rails/application/index.html.erb (745.4ms)
+Completed 200 OK in 772ms (Views: 754.9ms)
+
+
+Started GET "/swagger_doc" for 172.31.0.1 at 2019-02-24 17:54:30 +0000
+Started GET "/api/users_via_proxy_from_data_app" for 172.31.0.1 at 2019-02-24 17:54:42 +0000
+Started GET "/api/try_users_via_direct_app" for 172.31.0.1 at 2019-02-24 17:54:47 +0000
+Started GET "/api/try_users_directly_from_data_app_via_link" for 172.31.0.1 at 2019-02-24 17:54:50 +0000
+Started GET "/api/try_users_directly_from_data_app_via_address" for 172.31.0.1 at 2019-02-24 17:54:55 +0000
+Started GET "/api/users_via_proxy_from_data_app" for 172.31.0.1 at 2019-02-24 17:57:41 +0000
+  
+Terrapin::ExitStatusError (Command 'curl 'proxy_app_web_link:3003/api/proxy_for_data_app'' returned 6. Expected 0
+Here is the command output: STDOUT:
+
+
+
+STDERR:
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: proxy_app_web_link
+):
+  
+app/api/via_proxy/api.rb:10:in `block (2 levels) in <class:API>'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.2ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.9ms)
+Started GET "/swagger" for 172.31.0.1 at 2019-02-24 18:45:04 +0000
+Processing by GrapeSwaggerRails::ApplicationController#index as HTML
+  Rendering /usr/local/bundle/gems/grape-swagger-rails-0.3.0/app/views/grape_swagger_rails/application/index.html.erb
+  Rendered /usr/local/bundle/gems/grape-swagger-rails-0.3.0/app/views/grape_swagger_rails/application/index.html.erb (661.4ms)
+Completed 200 OK in 687ms (Views: 671.3ms)
+
+
+Started GET "/swagger_doc" for 172.31.0.1 at 2019-02-24 18:45:05 +0000
+Started GET "/api/users_via_proxy_from_data_app" for 172.31.0.1 at 2019-02-24 18:45:09 +0000
+Started GET "/api/try_users_via_direct_app" for 172.31.0.1 at 2019-02-24 18:45:13 +0000
+Started GET "/api/users_via_proxy_from_data_app" for 172.31.0.1 at 2019-02-24 18:45:42 +0000
+Started GET "/api/users_via_proxy_from_data_app" for 172.31.0.1 at 2019-02-25 07:57:46 +0000
+Started GET "/api/users_via_proxy_from_data_app" for 172.31.0.1 at 2019-02-25 13:00:26 +0000
+Started GET "/api/users_via_proxy_from_data_app" for 172.31.0.1 at 2019-02-25 13:52:39 +0000
+Started GET "/api/try_users_via_direct_app" for 172.31.0.1 at 2019-02-25 13:52:51 +0000
+Started GET "/api/try_users_directly_from_data_app_via_link" for 172.31.0.1 at 2019-02-25 13:53:04 +0000
+Started GET "/api/try_users_directly_from_data_app_via_address" for 172.31.0.1 at 2019-02-25 13:53:07 +0000
+Started GET "/swagger" for 172.31.0.1 at 2019-03-02 09:42:09 +0000
+Processing by GrapeSwaggerRails::ApplicationController#index as HTML
+  Rendering /usr/local/bundle/gems/grape-swagger-rails-0.3.0/app/views/grape_swagger_rails/application/index.html.erb
+  Rendered /usr/local/bundle/gems/grape-swagger-rails-0.3.0/app/views/grape_swagger_rails/application/index.html.erb (877.6ms)
+Completed 200 OK in 912ms (Views: 890.1ms)
+
+
+Started GET "/swagger_doc" for 172.31.0.1 at 2019-03-02 09:42:11 +0000
+Started GET "/api/users_via_proxy_from_data_app" for 172.31.0.1 at 2019-03-02 09:42:15 +0000
+Started GET "/" for 172.31.0.1 at 2019-03-02 12:40:10 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /usr/local/bundle/gems/railties-5.0.7.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-5.0.7.1/lib/rails/templates/rails/welcome/index.html.erb (4.9ms)
+Completed 200 OK in 27ms (Views: 11.3ms)
+
+
+Started GET "/swagger" for 172.31.0.1 at 2019-03-02 12:40:14 +0000
+Processing by GrapeSwaggerRails::ApplicationController#index as HTML
+  Rendering /usr/local/bundle/gems/grape-swagger-rails-0.3.0/app/views/grape_swagger_rails/application/index.html.erb
+  Rendered /usr/local/bundle/gems/grape-swagger-rails-0.3.0/app/views/grape_swagger_rails/application/index.html.erb (1780.5ms)
+Completed 200 OK in 1789ms (Views: 1786.7ms)
+
+
+Started GET "/swagger_doc" for 172.31.0.1 at 2019-03-02 12:40:16 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.31.0.1 at 2019-03-02 12:40:20 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.31.0.1 at 2019-03-02 12:40:23 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.31.0.1 at 2019-03-02 12:40:24 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.31.0.1 at 2019-03-02 12:40:24 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.31.0.1 at 2019-03-02 12:40:25 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.31.0.1 at 2019-03-02 12:40:25 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.31.0.1 at 2019-03-02 12:40:26 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-02 13:03:30 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-02 13:11:02 +0000
+Started GET "/swagger" for 172.18.0.1 at 2019-03-02 16:17:00 +0000
+Processing by GrapeSwaggerRails::ApplicationController#index as HTML
+  Rendering /usr/local/bundle/gems/grape-swagger-rails-0.3.0/app/views/grape_swagger_rails/application/index.html.erb
+  Rendered /usr/local/bundle/gems/grape-swagger-rails-0.3.0/app/views/grape_swagger_rails/application/index.html.erb (1932.6ms)
+Completed 200 OK in 1975ms (Views: 1948.1ms)
+
+
+Started GET "/swagger_doc" for 172.18.0.1 at 2019-03-02 16:17:03 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-02 16:17:12 +0000
+  
+Terrapin::ExitStatusError (Command 'curl -H 'X-Origin-Auth: eyJhbGciOiJIUzI1NiJ9.Ik1haW5WaWFQcm94eVR3b0FQUCI.igpASgcbY-yVC_v7ELqa3OqJQb7t6xLoBwdTSs_3K6Y' 'proxy_app_web_link:3003/api/proxy_for_data_app'' returned 6. Expected 0
+Here is the command output: STDOUT:
+
+
+
+STDERR:
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: proxy_app_web_link
+):
+  
+app/api/via_proxy/api.rb:10:in `block (2 levels) in <class:API>'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.9ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (24.2ms)
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-02 16:30:11 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-02 16:30:14 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-02 16:34:02 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-02 17:54:03 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-02 17:56:31 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-02 17:56:42 +0000
+Started GET "/swagger" for 172.18.0.1 at 2019-03-03 08:45:07 +0000
+Processing by GrapeSwaggerRails::ApplicationController#index as HTML
+  Rendering /usr/local/bundle/gems/grape-swagger-rails-0.3.0/app/views/grape_swagger_rails/application/index.html.erb
+  Rendered /usr/local/bundle/gems/grape-swagger-rails-0.3.0/app/views/grape_swagger_rails/application/index.html.erb (1510.2ms)
+Completed 200 OK in 1592ms (Views: 1557.1ms)
+
+
+Started GET "/swagger_doc" for 172.18.0.1 at 2019-03-03 08:45:09 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 08:45:27 +0000
+Started GET "/api/try_users_directly_from_data_app_via_address" for 172.18.0.1 at 2019-03-03 08:45:51 +0000
+Started GET "/api/try_users_directly_from_data_app_via_link" for 172.18.0.1 at 2019-03-03 08:45:55 +0000
+Started GET "/api/try_users_via_direct_app" for 172.18.0.1 at 2019-03-03 08:45:59 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 08:49:04 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 08:49:07 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 08:49:08 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 08:49:10 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 08:49:11 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 08:49:13 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 08:49:14 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 10:28:31 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 10:28:33 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 10:37:56 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:08:24 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:16:12 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:16:22 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:17:57 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:18:07 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:18:27 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:18:47 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:18:57 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:19:08 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:19:18 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:21:59 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:22:59 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:23:30 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:24:10 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:25:00 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:25:21 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:25:41 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:26:11 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:27:01 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:27:42 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:28:22 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:28:32 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:28:52 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:29:02 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:29:22 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:30:03 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:30:23 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:30:43 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:32:14 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:32:34 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:32:44 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:33:24 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:33:34 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:44:14 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:44:34 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:45:04 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:47:15 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:47:25 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:47:35 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:49:46 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:50:06 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:50:46 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:52:47 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:53:47 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:55:58 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:56:58 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:57:48 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:58:59 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 11:59:49 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 12:05:56 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 12:06:16 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 12:07:17 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 12:08:17 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 12:08:27 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 12:08:37 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 12:09:38 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 12:11:28 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 12:12:29 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 12:12:59 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 12:14:09 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 12:14:50 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 12:15:00 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 12:15:10 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 12:16:20 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 12:17:01 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 12:17:51 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 12:18:01 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 12:18:21 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 12:19:01 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 12:19:42 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 12:20:12 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 12:20:32 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 12:20:42 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:00:15 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:00:35 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:01:56 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:02:46 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:02:56 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:03:17 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:03:37 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:25:51 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:30:33 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:30:53 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:31:13 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:31:23 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:31:43 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:34:24 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:34:34 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:34:54 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:35:24 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:36:15 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:36:56 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:38:26 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:38:56 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:39:37 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:39:47 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:39:57 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:40:47 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:40:57 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:41:28 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:41:38 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:41:58 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:42:08 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:42:18 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:42:38 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:43:08 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:43:19 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:43:39 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:43:59 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:44:19 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:45:09 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:45:30 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:46:30 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:47:30 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:47:51 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:48:21 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:50:22 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:50:32 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:51:32 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:52:12 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:52:43 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:53:03 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:53:13 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:53:23 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:53:53 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:54:13 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:54:43 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:54:54 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:55:04 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:55:34 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:55:44 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:57:25 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:57:55 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:58:15 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:58:25 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:59:26 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:59:46 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 13:59:56 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:01:47 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:03:47 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:03:58 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:04:08 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:04:58 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:05:38 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:06:59 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:07:29 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:07:39 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:08:19 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:10:10 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:10:30 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:11:01 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:11:31 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:11:51 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:12:31 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:12:51 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:14:32 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:14:52 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:15:02 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:16:53 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:17:03 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:17:33 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:17:53 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:19:04 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:19:44 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:19:54 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:20:04 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:20:45 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:21:05 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:22:25 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:22:35 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:23:26 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:23:56 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:24:06 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:24:36 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:25:07 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:25:57 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:26:27 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:26:47 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:27:38 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:28:08 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:28:28 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:28:38 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:28:48 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:29:48 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:30:19 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:30:49 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:31:49 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:32:49 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:34:00 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:34:10 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:35:10 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:35:30 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:35:40 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:36:11 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:37:31 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:37:51 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:38:52 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:40:02 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:40:12 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:41:02 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:41:23 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:43:53 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:44:23 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:45:54 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:46:24 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:46:34 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:47:05 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:48:15 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 14:48:35 +0000
+Started GET "/swagger" for 172.18.0.1 at 2019-03-03 15:40:21 +0000
+Processing by GrapeSwaggerRails::ApplicationController#index as HTML
+  Rendering /usr/local/bundle/gems/grape-swagger-rails-0.3.0/app/views/grape_swagger_rails/application/index.html.erb
+  Rendered /usr/local/bundle/gems/grape-swagger-rails-0.3.0/app/views/grape_swagger_rails/application/index.html.erb (2302.4ms)
+Completed 200 OK in 2336ms (Views: 2316.6ms)
+
+
+Started GET "/swagger_doc" for 172.18.0.1 at 2019-03-03 15:40:24 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 15:40:26 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 15:45:04 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 15:45:34 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 15:45:44 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 15:47:14 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 15:48:15 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 15:48:25 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 15:48:35 +0000
+Started GET "/api/users_via_proxy_two_from_data_app" for 172.18.0.1 at 2019-03-03 15:48:45 +0000
